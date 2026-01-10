@@ -25,3 +25,14 @@ h2 {
 h3 {
 	@apply text-xl;
 }
+
+.btn-special {
+	@apply rounded-full;
+
+	svg {
+		border: 1px solid black !important;
+		border-radius: 50% !important;
+		font-size: 1.5rem !important;
+		margin: 1rem !important;
+	}
+}
