@@ -2,10 +2,11 @@
 
 import {useEffect, useRef} from "react";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import {Center, OrbitControls} from "@react-three/drei";
 // @ts-expect-error This does exist
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { Mesh } from "three";
+// @ts-expect-error This does exist, shush
 import {randFloat} from "three/src/math/MathUtils";
 
 function MeshComponent() {
@@ -34,9 +35,11 @@ function MeshComponent() {
 export default function SkinRender() {
 	return (
 		<div className="min-h-96">
-		<Canvas camera={{position: [0, 0, 4]}}>
+		<Canvas camera={{position: [0, 0, 2]}}>
 			<ambientLight intensity={1}/>
-			<MeshComponent/>
+			<Center>
+				<MeshComponent/>
+			</Center>
 			<OrbitControls/>
 		</Canvas>
 		</div>

@@ -27,12 +27,33 @@ h3 {
 }
 
 .btn-special {
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	background-color: #60a84b;
 	@apply rounded-full;
 
+	gap: 7px;
+	padding: 5px 2px 5px 10px;
+
+	border: 1px solid black;
+
+	transition: background-color 0.2s ease-in-out;
+
 	svg {
-		border: 1px solid black !important;
+		/*border: 1px solid black !important;*/
 		border-radius: 50% !important;
-		font-size: 1.5rem !important;
-		margin: 1rem !important;
-	}
+		height: max-content;
+		padding: 2px;
+		background-color: white;
+		min-height: 20px;
+		min-width: 20px;
+	};
+}
+
+.btn-special:hover {
+	cursor: pointer;
+	background-color: #00a700;
 }
