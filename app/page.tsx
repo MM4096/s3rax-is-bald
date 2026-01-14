@@ -9,7 +9,13 @@ export default function Home() {
 			<SkinRender/>
 			<h3>A website dedicated to our favorite bald-headed co-owner of Minevane</h3>
 			<div className="mb-4"/>
-			<Link href="/quotes" className="btn-special">See what others say about s3rax <BiRightArrow/></Link>
+			<div className="flex flex-col gap-2 items-center justify-center w-1/3">
+				<Link href="/quotes" className="btn-special w-full"><span>See what others say about s3rax</span> <BiRightArrow/></Link>
+				<Link href="/s3rax-the-bald" className="btn-special w-full"><span>Read an amazing poem by
+					TheRealBigBeard</span> <BiRightArrow/></Link>
+				<Link href="/join" className="btn-special w-full"><span>Join Minevane today!</span> <BiRightArrow/></Link>
+			</div>
+
 		</>
 	);
 }
