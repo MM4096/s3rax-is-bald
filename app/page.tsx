@@ -1,6 +1,7 @@
 import SkinRender from "@/app/components/skin_render";
 import {BiRightArrow} from "react-icons/bi";
 import Link from "next/link";
+import {Credit} from "@/app/components/credit";
 
 export default function Home() {
 	return (
@@ -16,6 +17,7 @@ export default function Home() {
 				<Link href="/join" className="btn-special w-full"><span>Join Minevane today!</span> <BiRightArrow/></Link>
 			</div>
 
+			<Credit/>
 		</>
 	);
 }
