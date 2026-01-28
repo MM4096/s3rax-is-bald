@@ -6,6 +6,7 @@ export function FadeIn({children, fadeTime, timeBetweenFades}: {
 	children: ReactNode,
 	fadeTime: number,
 	timeBetweenFades: number,
+	className?: string;
 }) {
 	const [visibleChildren, setVisibleChildren] = useState<ReactNode[]>([]);
 

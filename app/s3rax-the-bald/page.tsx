@@ -34,6 +34,11 @@ He’s got more shine than brains instead.`
 				  className="text-left w-full"/>
 	})
 
+	let longestLine: string = "";
+	POEM.split("\n").forEach(line => {
+		if (line.length > longestLine.length) longestLine = line;
+	})
+
 	return (<div className="w-max h-full pt-5">
 		<FadeIn fadeTime={2000} timeBetweenFades={300}>
 			<div>
@@ -50,7 +55,7 @@ He’s got more shine than brains instead.`
 		</FadeIn>
 
 		<pre className="opacity-0 h-0 max-h-0">
-			{POEM}
+			{longestLine}
 		</pre>
 	</div>)
 }

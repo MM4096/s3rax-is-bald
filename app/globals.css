@@ -32,14 +32,15 @@ h3 {
 	align-items: center;
 	justify-content: center;
 
-	background-color: #60a84b;
+	/*background-color: #60a84b;*/
+	box-shadow: 0 5px 5px lightgray;
 	@apply rounded-full;
 
 	gap: 7px;
 	padding: 5px 7px 5px 10px;
 
 	border: 1px solid black;
-	transition: background-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out;
 
 	span {
 		flex-grow: 1;
@@ -58,7 +59,12 @@ h3 {
 
 .btn-special:hover {
 	cursor: pointer;
-	background-color: #00a700;
+	background-color: #badfae;
+	svg {
+		border: 1px solid black !important;
+	}
+	/*background-color: #00a700;*/
+
 }
 
 .join-ip {
