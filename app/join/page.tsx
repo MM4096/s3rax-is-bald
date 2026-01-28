@@ -13,9 +13,11 @@ export default function JoinPage() {
 		<div className="mb-4"/>
 
 		<div className="flex flex-col items-center justify-center w-1/4">
-			<JoinIp ip="mv.s3raxisbald.com"/>
+			<JoinIp ip="bald.s3raxisbald.com"/>
 			<br/>
 			<JoinIp ip="codzIsOld.s3raxisbald.com"/>
+			<br/>
+			<JoinIp ip="mv.s3raxisbald.com"/>
 		</div>
 	</>);
 }
