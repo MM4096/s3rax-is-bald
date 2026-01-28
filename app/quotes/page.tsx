@@ -1,13 +1,18 @@
 import {Quote} from "@/app/quotes/components/quote";
 import {FadeIn} from "@/app/components/fadeIn";
+import {BackButton} from "@/app/components/backButton";
 
 export default function AboutPage() {
 	return (<>
-		<h1>Quotes From Minevane members on s3rax</h1>
-		<div className="mb-4"/>
-		<div className="block items-center text-center grow overflow-y-auto w-full">
-
+		<div className="block items-center text-center grow overflow-y-auto w-1/2">
 			<FadeIn fadeTime={2000} timeBetweenFades={300}>
+				<div className="pt-5 pb-5 text-left">
+					<div className="flex flex-row gap-2">
+						<BackButton/>
+						<h1>About s3rax</h1>
+					</div>
+					<h2>From Minevane members</h2>
+				</div>
 				<Quote author="TheRealBigBeard"> bald</Quote>
 				<Quote author="ProPlebNZ">Call him megamind, he likes it.</Quote>
 				{/*<Quote author="MM4096">wb bald dude!</Quote>*/}

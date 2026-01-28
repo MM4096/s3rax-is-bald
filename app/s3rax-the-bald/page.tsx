@@ -1,4 +1,5 @@
 import {FadeIn} from "@/app/components/fadeIn";
+import {BackButton} from "@/app/components/backButton";
 
 export default function PoemPage() {
 	const POEM: string = `S3 strolls in with a polished head,
@@ -33,10 +34,13 @@ He’s got more shine than brains instead.`
 				  className="text-left w-full"/>
 	})
 
-	return (<div className="w-max grow pt-5">
-		<FadeIn fadeTime={3000} timeBetweenFades={1000}>
+	return (<div className="w-max h-full pt-5">
+		<FadeIn fadeTime={2000} timeBetweenFades={300}>
 			<div>
-				<h1>s3rax the Bald</h1>
+				<div className="flex flex-row gap-2">
+					<BackButton/>
+					<h1>s3rax the Bald</h1>
+				</div>
 				<h2>A poem by <i>TheRealBigBeard</i></h2>
 			</div>
 			<br/>
