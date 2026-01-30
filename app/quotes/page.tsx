@@ -13,6 +13,21 @@ export default function AboutPage() {
 					</div>
 					<h2>From Minevane members</h2>
 				</div>
+				<Quote author="Codzsters" context="On January 29, 2026, at 18:46 NZT">
+					📣 ATTENTION, MINEVANE CITIZENS 📣
+					<br/>
+					Today marks a historic moment in Minevane. A day that will be whispered about for generations.
+					<br/>
+					Today is the day we officially confirmed that the Bald Eagle himself, <span className="discord-mention">@s3rax</span>, is—without question—the baldest human to ever walk our sacred land.
+					<br/>
+					Scientists are baffled. Barbers are unemployed. The shine is immaculate.
+					<br/>
+					This is a cause for celebration! May the Bald Eagle—also known as s3rax, the sexiest bald man alive, and the final boss of hair loss—live long, prosper, and continue to blind us with the reflection off his perfectly aerodynamic head.
+					<br/>
+					🦅✨ ALL HAIL THE BALD ✨🦅
+					<br/>
+					I think this warrants a <span className="discord-mention">@everyone</span> tag
+				</Quote>
 				<Quote author="TheRealBigBeard"> bald</Quote>
 				<Quote author="ProPlebNZ">Call him megamind, he likes it.</Quote>
 				{/*<Quote author="MM4096">wb bald dude!</Quote>*/}
